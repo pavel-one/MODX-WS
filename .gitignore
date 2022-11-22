@@ -1,0 +1,7 @@
+/app/
+/db/
+/redis/
+/.idea/
+/docker-compose.yml
+/conf/nginx/*.conf
+/app/core/cache
