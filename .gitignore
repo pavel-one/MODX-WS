@@ -1,5 +1,2 @@
-/db/
-/redis/
 /.idea/
-/docker-compose.yml
 /app/core/cache

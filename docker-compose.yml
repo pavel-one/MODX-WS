@@ -1,0 +1,49 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx:1.17-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    depends_on:
+      - app
+      - db
+    volumes:
+      - ./conf/nginx:/etc/nginx/conf.d/
+      - ./app:/var/www
+  app:
+    build:
+      args:
+        user: pavel
+        uid: 1000
+      context: ./
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+      - go
+    restart: unless-stopped
+    working_dir: /var/www/
+    volumes:
+      - ./app:/var/www
+
+  db:
+    image: mysql:5.7
+    restart: unless-stopped
+    volumes:
+      - ./dump/dump.sql:/docker-entrypoint-initdb.d/dump.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: xoW3WngKCbpv
+      MYSQL_DATABASE: db
+      MYSQL_USER: db_user
+      MYSQL_PASSWORD: X5NasAOm
+    command: ['mysqld', '--character-set-server=utf8mb4', '--collation-server=utf8mb4_unicode_ci']
+
+  go:
+    build:
+      context: ./ws/go
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      - TZ=Europe/Moscow
+    command: ["./bin"]
