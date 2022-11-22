@@ -1,0 +1,89 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '9830789b5693762ce72c303e3531a94d' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'MODX\\Revolution\\modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"tpl.WsExample.item","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<p>\\n    <strong>[[+name]]<\\/strong> -\\n    <small>[[+description]]<\\/small>\\n<\\/p>","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/wsexample\\/elements\\/chunks\\/item.tpl","content":"<p>\\n    <strong>[[+name]]<\\/strong> -\\n    <small>[[+description]]<\\/small>\\n<\\/p>","file":"item"}',
+        'guid' => '1f1207a33bd1a65f73b7af3eaf9ae752',
+        'native_key' => 0,
+        'signature' => '269c4e7ff07573bb3e05afc94666d3c0',
+      ),
+      '685c2bdc22f535602c092823dfa440f4' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'MODX\\Revolution\\modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"tpl.WsExample.office","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div id=\\"office-wsexample-wrapper\\">\\n    <div id=\\"office-preloader\\"><\\/div>\\n<\\/div>","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/wsexample\\/elements\\/chunks\\/office.tpl","content":"<div id=\\"office-wsexample-wrapper\\">\\n    <div id=\\"office-preloader\\"><\\/div>\\n<\\/div>","file":"office"}',
+        'guid' => '6680efdbd358475bbb4e3ebf95feadd7',
+        'native_key' => 0,
+        'signature' => '07c04fc0876e530f30d6439ba38b1e2f',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'f83cfd48e6e55b67fedd53f98dcf8e22' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'MODX\\Revolution\\modSnippet',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"WsExample","description":"WsExample snippet to list items","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/** @var modX $modx *\\/\\n\\/** @var array $scriptProperties *\\/\\n\\/** @var WsExample $WsExample *\\/\\n$WsExample = $modx->getService(\'WsExample\', \'WsExample\', MODX_CORE_PATH . \'components\\/wsexample\\/model\\/\', $scriptProperties);\\nif (!$WsExample) {\\n    return \'Could not load WsExample class!\';\\n}\\n\\n\\/\\/ Do your snippet code here. This demo grabs 5 items from our custom table.\\n$tpl = $modx->getOption(\'tpl\', $scriptProperties, \'Item\');\\n$sortby = $modx->getOption(\'sortby\', $scriptProperties, \'name\');\\n$sortdir = $modx->getOption(\'sortbir\', $scriptProperties, \'ASC\');\\n$limit = $modx->getOption(\'limit\', $scriptProperties, 5);\\n$outputSeparator = $modx->getOption(\'outputSeparator\', $scriptProperties, \\"\\\\n\\");\\n$toPlaceholder = $modx->getOption(\'toPlaceholder\', $scriptProperties, false);\\n\\n\\/\\/ Build query\\n$c = $modx->newQuery(\'WsExampleItem\');\\n$c->sortby($sortby, $sortdir);\\n$c->where([\'active\' => 1]);\\n$c->limit($limit);\\n$items = $modx->getIterator(\'WsExampleItem\', $c);\\n\\n\\/\\/ Iterate through items\\n$list = [];\\n\\/** @var WsExampleItem $item *\\/\\nforeach ($items as $item) {\\n    $list[] = $modx->getChunk($tpl, $item->toArray());\\n}\\n\\n\\/\\/ Output\\n$output = implode($outputSeparator, $list);\\nif (!empty($toPlaceholder)) {\\n    \\/\\/ If using a placeholder, output nothing and set output to specified placeholder\\n    $modx->setPlaceholder($toPlaceholder, $output);\\n\\n    return \'\';\\n}\\n\\/\\/ By default just return output\\nreturn $output;","locked":0,"properties":"a:6:{s:3:\\"tpl\\";a:7:{s:4:\\"name\\";s:3:\\"tpl\\";s:4:\\"desc\\";s:18:\\"wsexample_prop_tpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:18:\\"tpl.WsExample.item\\";s:7:\\"lexicon\\";s:20:\\"wsexample:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:6:\\"sortby\\";a:7:{s:4:\\"name\\";s:6:\\"sortby\\";s:4:\\"desc\\";s:21:\\"wsexample_prop_sortby\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:4:\\"name\\";s:7:\\"lexicon\\";s:20:\\"wsexample:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:7:\\"sortdir\\";a:7:{s:4:\\"name\\";s:7:\\"sortdir\\";s:4:\\"desc\\";s:22:\\"wsexample_prop_sortdir\\";s:4:\\"type\\";s:4:\\"list\\";s:7:\\"options\\";a:2:{i:0;a:2:{s:4:\\"text\\";s:3:\\"ASC\\";s:5:\\"value\\";s:3:\\"ASC\\";}i:1;a:2:{s:4:\\"text\\";s:4:\\"DESC\\";s:5:\\"value\\";s:4:\\"DESC\\";}}s:5:\\"value\\";s:3:\\"ASC\\";s:7:\\"lexicon\\";s:20:\\"wsexample:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:5:\\"limit\\";a:7:{s:4:\\"name\\";s:5:\\"limit\\";s:4:\\"desc\\";s:20:\\"wsexample_prop_limit\\";s:4:\\"type\\";s:11:\\"numberfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";i:10;s:7:\\"lexicon\\";s:20:\\"wsexample:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:15:\\"outputSeparator\\";a:7:{s:4:\\"name\\";s:15:\\"outputSeparator\\";s:4:\\"desc\\";s:30:\\"wsexample_prop_outputSeparator\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:1:\\"\\n\\";s:7:\\"lexicon\\";s:20:\\"wsexample:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:13:\\"toPlaceholder\\";a:7:{s:4:\\"name\\";s:13:\\"toPlaceholder\\";s:4:\\"desc\\";s:28:\\"wsexample_prop_toPlaceholder\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:0;s:7:\\"lexicon\\";s:20:\\"wsexample:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"core\\/components\\/wsexample\\/elements\\/snippets\\/wsexample.php","content":"\\/** @var modX $modx *\\/\\n\\/** @var array $scriptProperties *\\/\\n\\/** @var WsExample $WsExample *\\/\\n$WsExample = $modx->getService(\'WsExample\', \'WsExample\', MODX_CORE_PATH . \'components\\/wsexample\\/model\\/\', $scriptProperties);\\nif (!$WsExample) {\\n    return \'Could not load WsExample class!\';\\n}\\n\\n\\/\\/ Do your snippet code here. This demo grabs 5 items from our custom table.\\n$tpl = $modx->getOption(\'tpl\', $scriptProperties, \'Item\');\\n$sortby = $modx->getOption(\'sortby\', $scriptProperties, \'name\');\\n$sortdir = $modx->getOption(\'sortbir\', $scriptProperties, \'ASC\');\\n$limit = $modx->getOption(\'limit\', $scriptProperties, 5);\\n$outputSeparator = $modx->getOption(\'outputSeparator\', $scriptProperties, \\"\\\\n\\");\\n$toPlaceholder = $modx->getOption(\'toPlaceholder\', $scriptProperties, false);\\n\\n\\/\\/ Build query\\n$c = $modx->newQuery(\'WsExampleItem\');\\n$c->sortby($sortby, $sortdir);\\n$c->where([\'active\' => 1]);\\n$c->limit($limit);\\n$items = $modx->getIterator(\'WsExampleItem\', $c);\\n\\n\\/\\/ Iterate through items\\n$list = [];\\n\\/** @var WsExampleItem $item *\\/\\nforeach ($items as $item) {\\n    $list[] = $modx->getChunk($tpl, $item->toArray());\\n}\\n\\n\\/\\/ Output\\n$output = implode($outputSeparator, $list);\\nif (!empty($toPlaceholder)) {\\n    \\/\\/ If using a placeholder, output nothing and set output to specified placeholder\\n    $modx->setPlaceholder($toPlaceholder, $output);\\n\\n    return \'\';\\n}\\n\\/\\/ By default just return output\\nreturn $output;","file":"wsexample"}',
+        'guid' => '53bf4b92ab0f4cea17e13bf9339362ff',
+        'native_key' => 0,
+        'signature' => 'd065aa1e3a0a5eeb23cd96634e63911d',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 'name',
+    ),
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'wsexample',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"wsexample-1.0.0-pl\\/MODX\\/Revolution\\/modCategory\\/2ba9a6cd4df32027c361ac527312a559\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"wsexample"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"wsexample-1.0.0-pl\\/MODX\\/Revolution\\/modCategory\\/2ba9a6cd4df32027c361ac527312a559\\/1\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"wsexample"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"wsexample-1.0.0-pl\\/MODX\\/Revolution\\/modCategory\\/2ba9a6cd4df32027c361ac527312a559.symlinks.resolver","type":"php","name":"symlinks"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '88ef204d8f6b8ef114dc5d64f970d9cc',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modCategory',
+  'signature' => '2ba9a6cd4df32027c361ac527312a559',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"WsExample","rank":0}',
+);

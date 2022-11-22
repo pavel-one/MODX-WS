@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '6373b9cf118a95063cec69d729009c99',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '303b744d4562423ab3824bbd8e619920',
+  'native_key' => 'enable_template_picker_in_tree',
+  'object' => '{"key":"enable_template_picker_in_tree","value":true,"xtype":"combo-boolean","namespace":"core","area":"manager","editedon":null}',
+);

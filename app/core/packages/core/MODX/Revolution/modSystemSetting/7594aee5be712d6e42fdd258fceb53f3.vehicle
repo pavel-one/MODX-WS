@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '7db91b149f9fc39adc7aee68ca88b50b',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '7594aee5be712d6e42fdd258fceb53f3',
+  'native_key' => 'default_media_source_type',
+  'object' => '{"key":"default_media_source_type","value":"MODX\\\\Revolution\\\\Sources\\\\modFileMediaSource","xtype":"modx-combo-source-type","namespace":"core","area":"manager","editedon":null}',
+);

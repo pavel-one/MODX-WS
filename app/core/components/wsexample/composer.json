@@ -1,0 +1,6 @@
+{
+    "name": "root/wsexample",
+    "require": {
+        "guzzlehttp/guzzle": "^7.5"
+    }
+}

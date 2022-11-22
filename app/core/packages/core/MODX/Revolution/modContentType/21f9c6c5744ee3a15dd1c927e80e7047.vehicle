@@ -1,0 +1,12 @@
+<?php return array (
+  'preserve_keys' => false,
+  'update_object' => false,
+  'unique_key' => 'mime_type',
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '18004eb93ef72098a24e95fa8632f59a',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modContentType',
+  'signature' => '21f9c6c5744ee3a15dd1c927e80e7047',
+  'native_key' => 6,
+  'object' => '{"id":6,"name":"RSS","description":"For RSS feeds","mime_type":"application\\/rss+xml","file_extensions":".rss","icon":"icon-rss","headers":"NULL","binary":0}',
+);

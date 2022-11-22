@@ -1,0 +1,23 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"type":"php","source":"core\\/MODX\\/Revolution\\/modAccessPolicy\\/5b814cd0fa2324fb82f48db2e4fb1cdf.resolve.policies.resolver","name":"resolve.policies"}',
+    ),
+  ),
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'ff94b28defe6913accc1bca68d1555a1',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modAccessPolicy',
+  'signature' => '5b814cd0fa2324fb82f48db2e4fb1cdf',
+  'native_key' => 12,
+  'object' => '{"id":12,"name":"Hidden Namespace","description":"policy_hidden_namespace_desc","parent":0,"template":0,"class":"","data":"{\\"load\\":false,\\"list\\":false,\\"view\\":true}","lexicon":"permissions"}',
+);

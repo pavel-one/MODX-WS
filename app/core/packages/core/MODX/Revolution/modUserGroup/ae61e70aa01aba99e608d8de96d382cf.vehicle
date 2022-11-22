@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '248864b0356a1d2d99d8110ab22caeff',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modUserGroup',
+  'signature' => 'ae61e70aa01aba99e608d8de96d382cf',
+  'native_key' => 1,
+  'object' => '{"id":1,"name":"Administrator","description":null,"parent":0,"rank":0,"dashboard":1}',
+);

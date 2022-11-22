@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'b949558e58714c6b62d8c9947956c11c',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '62f70a9318ac39ebaece0f8cf1eb895b',
+  'native_key' => 'enable_gravatar',
+  'object' => '{"key":"enable_gravatar","value":false,"xtype":"combo-boolean","namespace":"core","area":"manager","editedon":null}',
+);

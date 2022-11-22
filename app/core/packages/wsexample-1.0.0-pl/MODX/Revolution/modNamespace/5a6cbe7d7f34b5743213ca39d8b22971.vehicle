@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'resolve_files' => true,
+  'resolve_php' => true,
+  'namespace' => 'wsexample',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '75112e9d81f982cd07805b3623437077',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modNamespace',
+  'signature' => '5a6cbe7d7f34b5743213ca39d8b22971',
+  'native_key' => 'wsexample',
+  'object' => '{"name":"wsexample","path":"{core_path}components\\/wsexample\\/","assets_path":""}',
+);

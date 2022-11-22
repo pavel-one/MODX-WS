@@ -1,0 +1,27 @@
+<?php return array (
+  'class' => 'xPDO\\Transport\\xPDOFileVehicle',
+  'object' => 
+  array (
+    'source' => 'core/xPDO/Transport/xPDOFileVehicle/51b997dce5ce7a0cb58d1ec3eaef22d3/',
+    'target' => 'return MODX_CONNECTORS_PATH;',
+    'name' => 'index.php',
+  ),
+  'vehicle_class' => 'xPDO\\Transport\\xPDOFileVehicle',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"type":"php","source":"core\\/xPDO\\/Transport\\/xPDOFileVehicle\\/51b997dce5ce7a0cb58d1ec3eaef22d3.resolve.core.resolver","target":"return MODX_CONNECTORS_PATH . \'config.core.php\';","name":"resolve.core"}',
+    ),
+    1 => 
+    array (
+      'type' => 'php',
+      'body' => '{"type":"php","source":"core\\/xPDO\\/Transport\\/xPDOFileVehicle\\/51b997dce5ce7a0cb58d1ec3eaef22d3.resolve.actionfields.resolver","name":"resolve.actionfields"}',
+    ),
+  ),
+  'guid' => '741d61e5c4cbfdc900685c6f386dbfaf',
+  'package' => '',
+  'signature' => '51b997dce5ce7a0cb58d1ec3eaef22d3',
+  'native_key' => '741d61e5c4cbfdc900685c6f386dbfaf',
+);

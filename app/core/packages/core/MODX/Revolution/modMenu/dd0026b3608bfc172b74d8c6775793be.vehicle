@@ -1,0 +1,215 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => 
+  array (
+    'Children' => 
+    array (
+      '5059752c36ade9cd2b339fb10a48854a' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'unique_key' => 'text',
+        'class' => 'MODX\\Revolution\\modMenu',
+        'object' => '{"text":"user","parent":"usernav","action":"","description":"","icon":"<span id=\\"user-avatar\\">{$userImage}<\\/span> <span id=\\"user-username\\">{$username}<\\/span>","menuindex":5,"params":"","handler":"","permissions":"menu_user","namespace":"core"}',
+        'guid' => 'b1e3371271508d60ec3aab6353ac0c69',
+        'native_key' => 'user',
+        'signature' => '5c781ccbdbe9c702a0cedc36f9e7d648',
+        'related_objects' => 
+        array (
+          'Children' => 
+          array (
+            'fe3ecc428069d189cd8fa72d5978f47d' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 'text',
+              'class' => 'MODX\\Revolution\\modMenu',
+              'object' => '{"text":"{$username}","parent":"user","action":"security\\/profile","description":"profile_desc","icon":"","menuindex":0,"params":"","handler":"","permissions":"change_profile","namespace":"core"}',
+              'guid' => '665fcba562c6609463dabe5dee4378e7',
+              'native_key' => '{$username}',
+              'signature' => '7980dd29e44d0eb7767a0752f86dd826',
+            ),
+            '57a3edb6ccda8d4dec37a1e924cb6be1' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 'text',
+              'class' => 'MODX\\Revolution\\modMenu',
+              'object' => '{"text":"messages","parent":"user","action":"security\\/message","description":"messages_desc","icon":"","menuindex":1,"params":"","handler":"","permissions":"messages","namespace":"core"}',
+              'guid' => '543d51067291799cc9938a99f7568f94',
+              'native_key' => 'messages',
+              'signature' => '11aad76cb72733512bc05b7845766cec',
+            ),
+            '1f2f634622bd959e68a338825901a00f' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 'text',
+              'class' => 'MODX\\Revolution\\modMenu',
+              'object' => '{"text":"language","parent":"user","action":"","description":"language_desc","icon":"","menuindex":2,"params":"","handler":"","permissions":"language","namespace":"core"}',
+              'guid' => '3022345b9c9309cb0ef6e3524c95c7ca',
+              'native_key' => 'language',
+              'signature' => '617fca690d02a74d2348f6e0ebd67d45',
+            ),
+            '63e3dceb1c36b61cd160614bd82805b3' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 'text',
+              'class' => 'MODX\\Revolution\\modMenu',
+              'object' => '{"text":"logout","parent":"user","action":"security\\/logout","description":"logout_desc","icon":"","menuindex":3,"params":"","handler":"MODx.logout(); return false;","permissions":"logout","namespace":"core"}',
+              'guid' => 'a545771776aba953ba2097fc82f40288',
+              'native_key' => 'logout',
+              'signature' => '0013874ee4127e311d086bc155a3a45d',
+            ),
+          ),
+        ),
+      ),
+      'b71e5a6edcad4e5ea2952e1779b25617' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'unique_key' => 'text',
+        'class' => 'MODX\\Revolution\\modMenu',
+        'object' => '{"text":"admin","parent":"usernav","action":"","description":"","icon":"<i class=\\"icon-gear icon icon-large\\"><\\/i>","menuindex":6,"params":"","handler":"","permissions":"settings","namespace":"core"}',
+        'guid' => '3e08bff39db50049adfa6ba8da2018aa',
+        'native_key' => 'admin',
+        'signature' => 'de067b78ab988f2e7fe7ebfb7009af95',
+        'related_objects' => 
+        array (
+          'Children' => 
+          array (
+            '51655939b1c9151ae142c7cca13cc10e' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 'text',
+              'class' => 'MODX\\Revolution\\modMenu',
+              'object' => '{"text":"system_settings","parent":"admin","action":"system\\/settings","description":"system_settings_desc","icon":"","menuindex":0,"params":"","handler":"","permissions":"settings","namespace":"core"}',
+              'guid' => 'b2cad80c4de4a70d053432b4e35e330e',
+              'native_key' => 'system_settings',
+              'signature' => 'e548c80e4b21b334b2129d8b7fa5d36b',
+            ),
+            'cd2d2ebc79331d18fb41e98ac2e04563' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 'text',
+              'class' => 'MODX\\Revolution\\modMenu',
+              'object' => '{"text":"form_customization","parent":"admin","action":"security\\/forms","description":"form_customization_desc","icon":"","menuindex":1,"params":"","handler":"","permissions":"customize_forms","namespace":"core"}',
+              'guid' => '1701e5d232437daf0f1bc5544a78ade9',
+              'native_key' => 'form_customization',
+              'signature' => '8df9c87c348efbc3ebc4cabddeeb8785',
+            ),
+            '0b42f9e1d8a77f0a8ba07a899ef41508' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 'text',
+              'class' => 'MODX\\Revolution\\modMenu',
+              'object' => '{"text":"dashboards","parent":"admin","action":"system\\/dashboards","description":"dashboards_desc","icon":"","menuindex":2,"params":"","handler":"","permissions":"dashboards","namespace":"core"}',
+              'guid' => '22bfa1fc15aea6eb7c590a5b2b5079b1',
+              'native_key' => 'dashboards',
+              'signature' => '6473cbab6c361d136eb75d905122e3f0',
+            ),
+            '94f03fbe98039368fba5686329767a55' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 'text',
+              'class' => 'MODX\\Revolution\\modMenu',
+              'object' => '{"text":"contexts","parent":"admin","action":"context","description":"contexts_desc","icon":"","menuindex":3,"params":"","handler":"","permissions":"view_context","namespace":"core"}',
+              'guid' => 'ba162e827989690439fa41c8d97d5c3c',
+              'native_key' => 'contexts',
+              'signature' => '41babed96d81ae5ffd05ac359e35836f',
+            ),
+            '87969f3afddf65752cf4ed59c4784413' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 'text',
+              'class' => 'MODX\\Revolution\\modMenu',
+              'object' => '{"text":"edit_menu","parent":"admin","action":"system\\/action","description":"edit_menu_desc","icon":"","menuindex":4,"params":"","handler":"","permissions":"actions","namespace":"core"}',
+              'guid' => '819b7bf74d0887fc171207b4a48fd9c7',
+              'native_key' => 'edit_menu',
+              'signature' => '4c52894eca4e17237b9864d72df918a3',
+            ),
+            'b14b3f51110324db86468671b939b48f' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 'text',
+              'class' => 'MODX\\Revolution\\modMenu',
+              'object' => '{"text":"acls","parent":"admin","action":"security\\/permission","description":"acls_desc","icon":"","menuindex":5,"params":"","handler":"","permissions":"access_permissions","namespace":"core"}',
+              'guid' => 'a218f0b998eba52edc0ccdd47e7da5e0',
+              'native_key' => 'acls',
+              'signature' => '3198cc64b8cecd8310142b43df9b78e4',
+            ),
+            'ac3cab43c31679f4c27b68b5c1930309' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 'text',
+              'class' => 'MODX\\Revolution\\modMenu',
+              'object' => '{"text":"propertysets","parent":"admin","action":"element\\/propertyset","description":"propertysets_desc","icon":"","menuindex":6,"params":"","handler":"","permissions":"property_sets","namespace":"core"}',
+              'guid' => '8052491a705abbae2f05d2c22a8888a1',
+              'native_key' => 'propertysets',
+              'signature' => '34ae3ec31f5c7678954c316c6c074e76',
+            ),
+            '460f26b7077202b903755131d74134d5' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 'text',
+              'class' => 'MODX\\Revolution\\modMenu',
+              'object' => '{"text":"lexicon_management","parent":"admin","action":"workspaces\\/lexicon","description":"lexicon_management_desc","icon":"","menuindex":7,"params":"","handler":"","permissions":"lexicons","namespace":"core"}',
+              'guid' => '408dc65f932992a0caebd00b42215bd9',
+              'native_key' => 'lexicon_management',
+              'signature' => 'ae473e89b7678f0cdb3e59e189270d09',
+            ),
+            'a43ed8493a71b7cfea8900686d3a1c19' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 'text',
+              'class' => 'MODX\\Revolution\\modMenu',
+              'object' => '{"text":"namespaces","parent":"admin","action":"workspaces\\/namespace","description":"namespaces_desc","icon":"","menuindex":8,"params":"","handler":"","permissions":"namespaces","namespace":"core"}',
+              'guid' => '48c619ac5c29dd11aca9632825d2757d',
+              'native_key' => 'namespaces',
+              'signature' => '74684a529c94bc1a5c6414327acd8a64',
+            ),
+          ),
+        ),
+      ),
+      'de6865a80622fe4fd642a5fc9ce775b6' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'unique_key' => 'text',
+        'class' => 'MODX\\Revolution\\modMenu',
+        'object' => '{"text":"about","parent":"usernav","action":"help","description":"","icon":"<i class=\\"icon-question-circle icon icon-large\\"><\\/i>","menuindex":8,"params":"","handler":"","permissions":"help","namespace":"core"}',
+        'guid' => '234c673087adcc265e3413fc04937a40',
+        'native_key' => 'about',
+        'signature' => '23a60617cce859aca60c30ae9a04a020',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Children' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 'text',
+    ),
+  ),
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '730a27e54e08ee64706e8bffcdd258e8',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modMenu',
+  'signature' => 'dd0026b3608bfc172b74d8c6775793be',
+  'native_key' => 'usernav',
+  'object' => '{"text":"usernav","parent":"","action":"","description":"usernav_desc","icon":"","menuindex":0,"params":"","handler":"","permissions":"","namespace":"core"}',
+);

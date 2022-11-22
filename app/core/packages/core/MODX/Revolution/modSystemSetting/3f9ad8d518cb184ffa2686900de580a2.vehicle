@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'a4428a8a1cdbaeccf647fc65d8e51600',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '3f9ad8d518cb184ffa2686900de580a2',
+  'native_key' => 'upload_file_exists',
+  'object' => '{"key":"upload_file_exists","value":true,"xtype":"combo-boolean","namespace":"core","area":"file","editedon":null}',
+);

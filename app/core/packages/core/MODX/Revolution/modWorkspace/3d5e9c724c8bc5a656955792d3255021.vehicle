@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '9c01553b1597adf389fdd6f45282a680',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modWorkspace',
+  'signature' => '3d5e9c724c8bc5a656955792d3255021',
+  'native_key' => 1,
+  'object' => '{"id":1,"name":"Default MODX workspace","path":"{core_path}","created":null,"active":1,"attributes":null}',
+);

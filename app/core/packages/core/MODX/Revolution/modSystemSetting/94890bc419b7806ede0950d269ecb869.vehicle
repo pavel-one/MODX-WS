@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'a85aa171ffd370ce0a77637083f17fcb',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '94890bc419b7806ede0950d269ecb869',
+  'native_key' => 'manager_tooltip_enable',
+  'object' => '{"key":"manager_tooltip_enable","value":true,"xtype":"combo-boolean","namespace":"core","area":"manager","editedon":null}',
+);

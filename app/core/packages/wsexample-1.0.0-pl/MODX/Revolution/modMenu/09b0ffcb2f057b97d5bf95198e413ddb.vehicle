@@ -1,0 +1,16 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => true,
+  'namespace' => 'wsexample',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => '6b95780b508d38ea422ada2b616a3246',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modMenu',
+  'signature' => '09b0ffcb2f057b97d5bf95198e413ddb',
+  'native_key' => 'wsexample',
+  'object' => '{"text":"wsexample","parent":"components","action":"home","description":"wsexample_menu_desc","icon":"","menuindex":0,"params":"","handler":"","permissions":"","namespace":"wsexample"}',
+);

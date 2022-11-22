@@ -1,0 +1,11 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'vehicle_class' => 'xPDO\\Transport\\xPDOObjectVehicle',
+  'guid' => 'bbf38db22b343ff998221bedc3825830',
+  'package' => '',
+  'class' => 'MODX\\Revolution\\modSystemSetting',
+  'signature' => '891f1c74d62e88e9c6fa8e4f5eb4bd3d',
+  'native_key' => 'automatic_template_assignment',
+  'object' => '{"key":"automatic_template_assignment","value":"sibling","xtype":"textfield","namespace":"core","area":"site","editedon":null}',
+);
